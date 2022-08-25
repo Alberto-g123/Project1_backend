@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.gutierrez.daotests.MeetingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-22T20:42:45" hostname="DESKTOP-JQCH6MN" time="0.46">
+  <properties/>
+  <testcase name="get_all_meetings_test()" classname="dev.gutierrez.daotests.MeetingTest" time="0.46"/>
+  <system-out><![CDATA[[Meeting{meeting_id=0, address='NO MEETING ASSIGNED', time=0, summary='not a real meeting'}, Meeting{meeting_id=1, address='No Mans Land', time=1662057000, summary='meeting to discuss issues about the joker'}, Meeting{meeting_id=2, address='No Mans Land', time=1661200688, summary='Discussion for who pays for all the damages the batman does'}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
