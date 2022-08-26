@@ -42,5 +42,12 @@ public class ComplaintServiceImpl implements ComplaintService{
         return this.complaintDAO.updateComplaint(complaint);
     }
 
+    @Override
+    public Complaint editComplaintToMeeting(int id, int meeting_id) {
+        Complaint complaint = this.complaintDAO.getComplaintById(id);
+        complaint.setMeeting_id(meeting_id);
+        return this.complaintDAO.updateComplaint(complaint);
+    }
+
 
 }

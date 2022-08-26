@@ -13,6 +13,7 @@ public interface ComplaintService {
 
 
     Complaint editComplaint(int id, Status status);
+    Complaint editComplaintToMeeting(int id, int meeting_id);
 
 
 }

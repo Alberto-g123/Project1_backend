@@ -20,13 +20,13 @@ public class ComplaintTest {
 
     ComplaintDAO complaintDAO = new ComplaintDAOPostgres();
 
-//    @Test
-//    void create_complaint_test(){
-//        Complaint complaint = new Complaint(3, Offense.CRIME,"JOKER STOLE MY MONEY", Status.UNREVIEWED, 0);
-//        Complaint savedComplaint = complaintDAO.createComplaint(complaint);
-//        Assertions.assertNotEquals(0, savedComplaint.getComplaint_id());
-//        System.out.println(complaint);
-//    }
+    @Test
+    void create_complaint_test(){
+        Complaint complaint = new Complaint(3, Offense.CRIME,"JOKER STOLE MY MONEY", Status.UNREVIEWED, 0);
+        Complaint savedComplaint = complaintDAO.createComplaint(complaint);
+        Assertions.assertNotEquals(0, savedComplaint.getComplaint_id());
+        System.out.println(complaint);
+    }
 
     @Test
     void get_complaint_by_id_test(){

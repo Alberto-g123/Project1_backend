@@ -14,13 +14,13 @@ public class MeetingTest {
 
     MeetingDAO meetingDAO = new MeetingDAOPostgres();
 
-//    @Test
-//    void create_meeting_test(){
-//        Meeting meeting = new Meeting(0,"No Mans Land", 1661200688,"Discussion for who pays for all the damages the batman does");
-//        Meeting savedMeeting = meetingDAO.createMeeting(meeting);
-//        Assertions.assertNotEquals(0, savedMeeting.getMeeting_id());
-//        System.out.println(meeting);
-//    }
+    @Test
+    void create_meeting_test(){
+        Meeting meeting = new Meeting(0,"No Mans Land", 1661200688,"Discussion for who pays for all the damages the batman does");
+        Meeting savedMeeting = meetingDAO.createMeeting(meeting);
+        Assertions.assertNotEquals(0, savedMeeting.getMeeting_id());
+        System.out.println(meeting);
+    }
 
     @Test
     void get_all_meetings_test(){

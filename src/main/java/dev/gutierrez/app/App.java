@@ -13,6 +13,7 @@ import dev.gutierrez.handlers.appuser.LoginHandler;
 import dev.gutierrez.handlers.complaint.AllComplaintHandler;
 import dev.gutierrez.handlers.complaint.CreateComplaintHandler;
 import dev.gutierrez.handlers.complaint.UpdateComplaintHandler;
+import dev.gutierrez.handlers.complaint.UpdateComplaintToMeetingHandler;
 import dev.gutierrez.handlers.meeting.AllMeetingHandler;
 import dev.gutierrez.handlers.meeting.CreateMeetingHandler;
 import dev.gutierrez.services.complaint.ComplaintService;
@@ -43,11 +44,13 @@ public class App {
         CreateComplaintHandler createComplaintHandler = new CreateComplaintHandler();
         AllComplaintHandler allComplaintHandler = new AllComplaintHandler();
         UpdateComplaintHandler updateComplaintHandler = new UpdateComplaintHandler();
+        UpdateComplaintToMeetingHandler updateComplaintToMeetingHandler = new UpdateComplaintToMeetingHandler();
 
 
         app.post("/complaints", createComplaintHandler);
         app.get("/complaints", allComplaintHandler);
         app.patch("/complaints/{id}/{status}", updateComplaintHandler);
+        app.put("/complaints/{id}/{meeting_id}", updateComplaintToMeetingHandler);
 
 
         CreateMeetingHandler createMeetingHandler = new CreateMeetingHandler();
