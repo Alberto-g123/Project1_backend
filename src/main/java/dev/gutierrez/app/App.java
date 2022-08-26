@@ -1,11 +1,9 @@
 package dev.gutierrez.app;
 
-import com.google.gson.Gson;
+
 import dev.gutierrez.daos.appuser.AppUserDAOPostgres;
 import dev.gutierrez.daos.complaint.ComplaintDAOPostgres;
 import dev.gutierrez.daos.meeting.MeetingDAOPostgres;
-import dev.gutierrez.dtos.LoginCredentials;
-import dev.gutierrez.entities.Entities.AppUser;
 import dev.gutierrez.entities.Entities.Complaint;
 import dev.gutierrez.exceptions.NoUserFoundException;
 import dev.gutierrez.exceptions.PasswordException;

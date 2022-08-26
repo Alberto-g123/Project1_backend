@@ -4,8 +4,6 @@ import com.google.gson.Gson;
 import dev.gutierrez.app.App;
 import dev.gutierrez.dtos.LoginCredentials;
 import dev.gutierrez.entities.Entities.AppUser;
-import dev.gutierrez.exceptions.NoUserFoundException;
-import dev.gutierrez.exceptions.PasswordException;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 import org.jetbrains.annotations.NotNull;
