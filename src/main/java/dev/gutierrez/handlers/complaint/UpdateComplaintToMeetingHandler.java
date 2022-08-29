@@ -14,6 +14,9 @@ public class UpdateComplaintToMeetingHandler implements Handler {
         int meeting = Integer.parseInt(ctx.pathParam("meeting_id"));
         Gson gson = new Gson();
         Complaint complaint = App.complaintService.getComplaintById(id);
+        if(complaint != App.meetingService.getAllMeeting()){
+            ctx.status(304);
+        }
         complaint = App.complaintService.editComplaintToMeeting(id, meeting);
         String json = gson.toJson(complaint);
         ctx.result(json);
